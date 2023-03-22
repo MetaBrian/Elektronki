@@ -1,4 +1,32 @@
-:root {
+
+.cardTitle{
+background-color: white;
+color: black;
+border-bottom-style: solid;
+border-color: #FF0000;
+}
+
+.navBar{
+  flex:auto;
+  justify-content: space-between;
+  background-color: black;
+  color: lightblue
+}
+
+.footer{
+  background-color: black;
+color: lightblue
+}
+
+.cardFrontBody{
+  background-color: white;
+  text-decoration-line: underline;
+  text-decoration-color: lightblue;
+}
+
+/* Vite's default styling is below */
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -53,9 +81,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
-@media (prefers-color-scheme: light) {
+
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -66,4 +95,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
