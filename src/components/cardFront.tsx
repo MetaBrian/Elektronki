@@ -1,9 +1,9 @@
 function cardFront (){
 
-    const cardTitle = 'Card Title'
+    const cardTitle:string = 'Card Title'
  //allow user to input, should have 'card title' as a placeholder
 
-    const frontBodyText ='frontText'
+    const frontBodyText:string ='frontText'
    
    
     return(
