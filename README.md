@@ -1,1 +1,1 @@
-Elektronki merging test
+Elektronki, a Flashkard app

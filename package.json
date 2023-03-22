@@ -1,0 +1,23 @@
+{
+  "name": "Elektronki",
+  "version": "1.0.0",
+  "description": "Elektronki, a flashcard app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite", 
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MetaBrian/Elektronki.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MetaBrian/Elektronki/issues"
+  },
+  "homepage": "https://github.com/MetaBrian/Elektronki#readme"
+}
