@@ -1,1 +1,1 @@
-Elektronki, a Flashkard app
+Elektronki, a flashcard app
