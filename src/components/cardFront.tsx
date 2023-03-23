@@ -8,27 +8,27 @@ function cardFront (){
    
     return(
         <>
-        <div>
+        <div className='newCard'>
             <div className='cardTitle'>
                 {cardTitle}
             </div>
             
-            <br/>
-            <br/>
+            <br/><br/>
 
             <div className='cardFrontBody'>
-            {frontBodyText}
+                {frontBodyText}
             </div>
 
-            <br/>
-            <br/>
+            <br/><br/>
             
-            <div className="cardButtons">
+            
+
+        </div>
+        <div className="cardButtons">
                 <button>
                     Flip
                 </button>
-            </div>
-            </div>
+        </div>
         </>
     
     )
