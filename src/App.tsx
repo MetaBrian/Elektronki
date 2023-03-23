@@ -1,18 +1,33 @@
 import NavBar from "./components/navBar"
-import CardFront from "./components/cardFront"
 import ContactMe from "./components/contactMe"
+import { Route, Routes } from 'react-router-dom';
+import HomeContainer from "./containers/HomeContainer";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
 
   return (
     <>
+    <div>
+      <div>
       <NavBar/>
+      </div>
+
       <br/>
+      
+      <Routes>
+        <Route path='/'element={<HomeContainer/>}/>
+        <Route path='*' element={<ErrorPage/>}/>
+      </Routes>
+
       <br/>
-      <CardFront/>
-      <br/>
-      <br/>
+
+      <div>
+      
       <ContactMe/>
+
+      </div>
+      </div>
     </>
   )
 }

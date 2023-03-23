@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function NavBar() {
 
     return (
@@ -5,9 +7,7 @@ function NavBar() {
         <div className="navBar">
 
             <img id='elektronkiLogo' src='../src/assets/elektronki.png' alt="Elektronki's logo"/>
-            <button onClick = {() => {window.location.replace('localhost:5173') }} className='navButtons'>
-                Elektronki
-            </button>
+            <Link to='/error'>Error page</Link>
             
             <button className='navButtons'onClick= {() => {window.open('https://github.com/MetaBrian/Elektronki','_blank')}}>
                 Github
