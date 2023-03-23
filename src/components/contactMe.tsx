@@ -3,11 +3,13 @@ function contactMe() {
     return(
         <>
         <div className='footer'>
-            <span>
-            <p>Elektronki 2023</p>
-            <button>Contact me</button>
-            </span>
-            
+            <div>
+                <span>
+                    <p>@2023 Elektronki</p>
+                    <p>All rights reserved</p>
+                </span>
+            </div>
+            <button className='navButtons'>Contact me</button>
         </div>
         </>
     )

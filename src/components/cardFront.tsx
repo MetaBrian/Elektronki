@@ -25,7 +25,7 @@ function cardFront (){
 
         </div>
         <div className="cardButtons">
-                <button>
+                <button className='flipButtons'>
                     Flip
                 </button>
         </div>
