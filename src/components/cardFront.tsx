@@ -1,4 +1,4 @@
-function cardFront (){
+function CardFront (){
 
     const cardTitle:string = 'Card Title'
  //allow user to input, should have 'card title' as a placeholder
@@ -35,4 +35,4 @@ function cardFront (){
 
 }
 
-export default cardFront;
+export default CardFront;

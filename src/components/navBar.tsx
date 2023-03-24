@@ -6,32 +6,30 @@ function NavBar() {
         <>
         <div className="navBar">
 
-            
-            <Link to='/error'>
+            <Link to='/' className='navLinks'>
             <img id='elektronkiLogo' src='../src/assets/elektronki.png' alt="Elektronki's logo"/>
-                Elektronki
+                <p>Elektronki</p>
             </Link>
-            
-         
 
-          
-{/* 
-                make below into links */}
-            <button className='navButtons'>
-                Flashcards
-            </button>
+            <Link to='/flashcards'>
+            FlashCards
+            </Link>
 
-            <button className='navButtons'>
-                Create a card
-            </button>
+            <Link to='/exammode'>
+            Exam Mode
+            </Link>
 
-            <button className='navButtons'>
-                Exam Mode
-            </button>
-{/* 
-            below buttons remain buttons */}
+            <Link to='/createcards'>
+            Create a card
+            </Link>
 
-            <button className='navButtons'onClick= {() => {window.open('https://github.com/MetaBrian/Elektronki','_blank')}}>
+            <Link to='/testingerrors'>
+            Error Page
+            </Link>
+
+
+
+            <button className='navButtons' onClick= {() => {window.open('https://github.com/MetaBrian/Elektronki','_blank')}}>
                 <img height= '100vh' width='100vw'src='../src/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
             </button>
 

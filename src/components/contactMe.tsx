@@ -1,4 +1,4 @@
-function contactMe() {
+function ContactMe() {
 
     return(
         <>
@@ -23,4 +23,4 @@ function contactMe() {
     )
 }
 
-export default contactMe;
+export default ContactMe;
