@@ -17,7 +17,7 @@
 .navBar{
   display:flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: white;
   color: lightblue;
   height: 10vh;
   width: 100vw;
@@ -48,7 +48,7 @@
 }
 
 .navButtons{
-  background-color:black;
+  background-color:white;
   color:lightblue;
   border-style: groove;
   border-color: lightblue;
