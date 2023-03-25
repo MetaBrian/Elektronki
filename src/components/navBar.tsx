@@ -5,25 +5,29 @@ function NavBar() {
     return (
         <>
         <div className="navBar">
-
-            <Link to='/' className='navLinks'>
+            <div className='logo'>
             <img id='elektronkiLogo' src='../src/assets/elektronki.png' alt="Elektronki's logo"/>
-                <p>Elektronki</p>
+            <Link to='/' className='navLinks'>
+                <p id='LogoText'>Elektronki</p>
             </Link>
+            
+            
+            
+            </div>
 
-            <Link to='/flashcards'>
+            <Link to='/flashcards' className="navLinks">
             FlashCards
             </Link>
 
-            <Link to='/exammode'>
+            <Link to='/exammode' className="navLinks">
             Exam Mode
             </Link>
 
-            <Link to='/createcards'>
+            <Link to='/createcards' className="navLinks">
             Create a card
             </Link>
 
-            <Link to='/testingerrors'>
+            <Link to='/testingerrors' className="navLinks">
             Error Page
             </Link>
 
@@ -34,7 +38,7 @@ function NavBar() {
             </button>
 
             <button className='navButtons'>
-                <img height='100vh' width= '100vw'src="../src/assets/light&dark-icon.png" alt='light and dark icon'/>
+                <img height='100vh' width='100vw' src="../src/assets/light&dark-icon.png" alt='light and dark icon'/>
             </button>
             
         </div>

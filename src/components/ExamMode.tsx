@@ -2,7 +2,10 @@ function ExamMode(){
     return (
         <>
         <div className='containers'>
-            <h2>Coming soon...</h2>
+            <form>
+                <label htmlFor="fname">ExamMode</label>
+                <input id='fname' placeholder='Coming Soon...' type='text'/>
+            </form>
         </div>
         </>
     )
