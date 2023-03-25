@@ -1,39 +1,31 @@
-import NavBar from "./components/navBar"
-import CardFront from "./components/cardFront";
+import NavBar from "./components/NavBar";
+import CardFront from "./components/CardFront";
 import { Route, Routes } from 'react-router-dom';
-import HomeContainer from "./containers/HomeContainer";
+import Home from './components/Home'
 import ErrorPage from "./components/ErrorPage";
 import ExamMode from "./components/ExamMode";
 import FlashCards from "./components/FlashCards";
-import ContactMe from "./components/contactMe";
+import ContactMe from "./components/ContactMe";
 
 function App() {
 
   return (
-    <>
-    <div>
-      <div>
+    <>   
       <NavBar/>
-      </div>
-
+     
       <br/>
-      
+
       <Routes>
-        <Route path='/'element={<HomeContainer/>}/>
+        <Route path='/'element={<Home/>}/>
         <Route path='/flashcards' element={<FlashCards/>}/>
         <Route path='/createcards' element={<CardFront/>}/>
         <Route path='/exammode' element={<ExamMode/>}/>
         <Route path='*' element={<ErrorPage/>}/>
-      </Routes>
+      </Routes>      
 
       <br/>
-
-      <div>
       
       <ContactMe/>
-
-      </div>
-      </div>
     </>
   )
 }

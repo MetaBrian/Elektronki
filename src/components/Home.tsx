@@ -1,12 +1,11 @@
-function FlashCards(){
+function Home (){
     return (
         <>
         <div className='containers'>
-            <h2>Display flashCards here</h2>
+            <h2 className='HomeText'>Welcome!</h2>
         </div>
         </>
     )
-
 }
 
-export default FlashCards;
+export default Home;

@@ -34,7 +34,7 @@ function NavBar() {
             </button>
 
             <button className='navButtons'>
-                <img height='50vh' width= '100vw'src="../src/assets/light&dark-icon.png" alt='light and dark icon'/>
+                <img height='100vh' width= '100vw'src="../src/assets/light&dark-icon.png" alt='light and dark icon'/>
             </button>
             
         </div>
@@ -44,4 +44,4 @@ function NavBar() {
 )
 }
 
-export default NavBar
+export default NavBar;

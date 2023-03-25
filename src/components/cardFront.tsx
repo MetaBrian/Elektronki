@@ -8,10 +8,11 @@ function CardFront (){
    
     return(
         <>
-        <div className='newCard'>
-            <div className='cardTitle'>
+        <div className='containers'>
+            <div className='newCard'>
+                <div className='cardTitle'>
                 {cardTitle}
-            </div>
+                 </div>
             
             <br/><br/>
 
@@ -21,13 +22,15 @@ function CardFront (){
 
             <br/><br/>
             
-            
+            </div>
 
-        </div>
+        
         <div className="cardButtons">
                 <button className='flipButtons'>
                     Flip
                 </button>
+        </div>
+
         </div>
         </>
     

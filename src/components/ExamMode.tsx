@@ -1,7 +1,7 @@
 function ExamMode(){
     return (
         <>
-        <div>
+        <div className='containers'>
             <h2>Coming soon...</h2>
         </div>
         </>
