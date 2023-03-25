@@ -1,11 +1,12 @@
 .containers{
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 82%;
   width: 100%;
-  align-items: center;
-  position: absolute; 
-  left:0%;
+  position: fixed; 
+  left: 0%;
+  top: 9%;
 }
 
 .footer{
@@ -15,7 +16,7 @@
   color: lightblue;
   height: 9%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0%;
 }
@@ -39,7 +40,7 @@
 
 .footerRight{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: relative;
   height: 100%;
   width: 40%;
@@ -49,28 +50,37 @@
 /* 
 reassess below */
 
-
-/* 
-next */
-
-
-
 .navBar{
   display:flex;
   justify-content: space-between;
   height: 9%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  background-color: black;
 }
 
 .navBarButtons{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
   width: 20%;
 }
+
+
+.navButtons{
+  
+  background-color:lightblue;
+  border-style: groove;
+  border-color: lightblue;
+  height: 60%;
+  width: 30%;
+  position: relative;
+  top: 20%;
+  left: 10%;
+}
+
 
 .navBarLinks{
   display: flex;
@@ -80,18 +90,6 @@ next */
   background-color:black;
 }
 
-
-
-
-
-
-.navButtons{
-  background-color:lightblue;
-  border-style: groove;
-  border-color: lightblue;
-  height: 100%;
-  width: 50%;
-}
 
 .navLinks{
   color:lightblue;

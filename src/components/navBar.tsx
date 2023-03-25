@@ -6,12 +6,7 @@ function NavBar() {
         <>
         <div className="navBar">
         
-
-
-
             <div className="navBarLinks">
-
-           
 
             <Link to='/flashcards' className="navLinks">
             FlashCards
@@ -30,8 +25,9 @@ function NavBar() {
             </Link>
             </div>
 
+
             <div className='navBarButtons'>
-            <button className='navButtons' onClick= {() => {window.open('https://github.com/MetaBrian/Elektronki','_blank')}}>
+            <button className='navButtons' onClick={() => {window.open('https://github.com/MetaBrian/Elektronki','_blank'); console.log('clicked')}}>
                 <img height= '100%' width='100%'src='../src/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
             </button>
 
