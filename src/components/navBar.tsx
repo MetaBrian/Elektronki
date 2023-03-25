@@ -5,15 +5,13 @@ function NavBar() {
     return (
         <>
         <div className="navBar">
-            <div className='logo'>
-            <img id='elektronkiLogo' src='../src/assets/elektronki.png' alt="Elektronki's logo"/>
-            <Link to='/' className='navLinks'>
-                <p id='LogoText'>Elektronki</p>
-            </Link>
-            
-            
-            
-            </div>
+        
+
+
+
+            <div className="navBarLinks">
+
+           
 
             <Link to='/flashcards' className="navLinks">
             FlashCards
@@ -30,17 +28,18 @@ function NavBar() {
             <Link to='/testingerrors' className="navLinks">
             Error Page
             </Link>
+            </div>
 
-
-
+            <div className='navBarButtons'>
             <button className='navButtons' onClick= {() => {window.open('https://github.com/MetaBrian/Elektronki','_blank')}}>
-                <img height= '100vh' width='100vw'src='../src/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
+                <img height= '100%' width='100%'src='../src/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
             </button>
 
             <button className='navButtons'>
-                <img height='100vh' width='100vw' src="../src/assets/light&dark-icon.png" alt='light and dark icon'/>
+                <img height='100%' width='100%' src="../src/assets/light&dark-icon.png" alt='light and dark icon'/>
             </button>
-            
+            </div>
+
         </div>
     </>
    

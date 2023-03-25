@@ -5,12 +5,13 @@ import Home from './components/Home'
 import ErrorPage from "./components/ErrorPage";
 import ExamMode from "./components/ExamMode";
 import FlashCards from "./components/FlashCards";
-import ContactMe from "./components/ContactMe";
+import ContactMe from "./components/Footer";
 
 function App() {
 
   return (
-    <>   
+    <>  
+    <div className='App'>
       <NavBar/>
      
       <br/>
@@ -26,6 +27,8 @@ function App() {
       <br/>
       
       <ContactMe/>
+
+      </div> 
     </>
   )
 }
