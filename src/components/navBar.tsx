@@ -5,6 +5,16 @@ function NavBar() {
     return (
         <>
         <div className="navBar">
+
+            <div className='navBarLogo'>
+              
+                <img id='LogoImage' src='../src/assets/elektronki.png'/>
+               <Link id='LogoText'to='/'>Elektronki</Link>
+           <div></div>
+                
+
+            </div>
+
         
             <div className="navBarLinks">
 

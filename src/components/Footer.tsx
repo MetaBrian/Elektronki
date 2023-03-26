@@ -13,11 +13,10 @@ function ContactMe() {
 
 
             
-                    
                 
          <div className='footerRight'>
-                <p>Questions or Concerns?</p>
                 
+         <p>Questions or Concerns?</p>
                 <button className='footerButtons' onClick={()=>{window.open('https://www.linkedin.com/in/leonardo-brian-campos/','_blank')}}>
                     <img height='100%' width='100%'src='../src/assets/linkedinicon.png' alt='linkedin icon'/>
                 </button>

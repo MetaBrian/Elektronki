@@ -13,9 +13,12 @@
   display: flex;
   justify-content: space-between;
   background-color: black;
+
   color: lightblue;
+
   height: 9%;
   width: 100%;
+
   position: fixed;
   bottom: 0;
   left: 0%;
@@ -25,78 +28,100 @@
   background-color:lightblue;
   border-style: groove;
   border-color: lightblue;
-  position:relative;
-  top: 20%;
+
+  height: 60%;
   width: 20%;
-  height: 50%;
+ 
 }
 
 .footerLeft{
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
   width: 60%;
-  left: 1%;
 }
+
+
 
 .footerRight{
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   position: relative;
   height: 100%;
-  width: 40%;
-  right: 1%;
+  width: 30%;
 
 }
-/* 
-reassess below */
 
 .navBar{
   display:flex;
   justify-content: space-between;
+  background-color: black;
+
   height: 9%;
   width: 100%;
+  
   position: fixed;
   top: 0;
-  left: 0;
-  background-color: black;
+  left: 0%;
+
 }
 
 .navBarButtons{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   height: 100%;
-  width: 20%;
+  width: 30%;
 }
 
 
 .navButtons{
-  
   background-color:lightblue;
   border-style: groove;
   border-color: lightblue;
+
   height: 60%;
-  width: 30%;
-  position: relative;
-  top: 20%;
-  left: 10%;
+  width: 20%;
+
 }
 
+#LogoText{
+  color: black;
+}
+
+#LogoImage{
+  height: 100%;
+  width: 50%;
+}
+
+.navBarLogo{
+  display: flex;
+  background-color: lightblue;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20%
+}
 
 .navBarLinks{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100%;
-  width: 70%;
-  background-color:black;
+  width: 50%;
 }
 
 
 .navLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color:lightblue;
 }
 
 /* 
-
+cardfront css
  */
 
 /* .cardButtons{
