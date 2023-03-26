@@ -1,7 +1,7 @@
 function Home (){
     return (
         <>
-        <div className='containers'>
+        <div className='Home'>
             <h2 className='HomeText'>Welcome!</h2>
         </div>
         </>

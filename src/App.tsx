@@ -1,5 +1,5 @@
 import NavBar from "./components/NavBar";
-import CardFront from "./components/CardFront";
+import CardFront from "./components/NewCards";
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home'
 import ErrorPage from "./components/ErrorPage";

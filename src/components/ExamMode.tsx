@@ -1,24 +1,27 @@
 function ExamMode(){
     return (
         <>
-        <div className='containers'>
+        <div className='ExamMode'>
 
-            <div className='ExamMode'>
-                <h2>Pick a topic</h2>
-            </div>
-            <div>
-                <button ><img src='../src/assets/black-folder.png'/></button>
-            </div>
+       
+            <h2>Choose a Topic</h2>
+       
 
+            <div className='childDiv'>
+            <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfolder1')}}>
+                <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
+                <p>Folder 1 (20)</p>
+            </button>
 
-{/* 
-        once topic clicked */}
+            <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfolder2')}}>
+                <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
+                Folder 2 (79)
+            </button>
 
-            <div>
-            <form>
-                <label htmlFor="fname">ExamMode</label>
-                <input id='fname' placeholder='Coming Soon...' type='text'/>
-            </form>
+            <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfoldertotal')}}>
+                <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
+                All Cards (99)
+            </button>
             </div>
             
         </div>

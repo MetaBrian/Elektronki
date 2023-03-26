@@ -1,4 +1,5 @@
-.containers{
+
+.ErrorPage{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +9,81 @@
   left: 0%;
   top: 9%;
 }
+
+.ExamMode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 82%;
+  width: 100%;
+  position: fixed; 
+  left: 0%;
+  top: 9%;
+  background-color: bisque;
+}
+
+.childDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  border-style: outset;
+  border-color: gray;
+}
+
+.Home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 82%;
+  width: 100%;
+  position: fixed; 
+  left: 0%;
+  top: 9%;
+}
+
+.FlashCards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 82%;
+  width: 100%;
+  position: fixed; 
+  left: 0%;
+  top: 9%;
+  background-color: lightblue;
+}
+
+.FlashCardsButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  height: 10%;
+  width: 10%;
+  border-style: ridge;
+  border-color: white;
+}
+
+.newCards{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 82%;
+  width: 100%;
+  position: fixed; 
+  left: 0%;
+  top: 9%;
+}
+
+
+
+
 
 .footer{
   display: flex;
@@ -120,67 +196,23 @@
   color:lightblue;
 }
 
-/* 
-cardfront css
- */
-
-/* .cardButtons{
-  display: flex;
-  justify-content: center;
-}
-
-.cardFrontBody{
-  display:flex;
-  justify-content: center;
-  background-color: white;
-  text-decoration-line: underline;
-  text-decoration-color: lightblue;
-  width: 99vw;
-  height: 55vh;
-}
 
 
-
-
-
-
-
-.flipButtons{
-  color:red;
-  background-color: white;
-  height: 5vh;
-  width: 10vw;
-}
-
-
-
-.cardTitle{
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  color: black;
-  border-bottom-style: solid;
-  border-color: #FF0000;
-  height: 5vh;
-  width: 97vw;
-}
-
-
-
-
-
-
-
-.newCard{
-  border-style: solid;
+#flipButton{
+  background-image: url('/src/assets/flashcard.png');
+  background-size: 100% 100%;
+  height: 9%;
+  width: 7%;
+  border-style: groove;
   border-color: black;
-} */
+}
 
+#cardFront{
+  display: flex;
+  background-image: url('/src/assets/flashcard.png');
+  background-size: 100% 100%;
+  height: 75%;
+  width: 80%;
+  justify-content: center;
 
-
-
-
-
-
-
-
+}

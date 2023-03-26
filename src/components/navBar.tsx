@@ -9,7 +9,7 @@ function NavBar() {
             <div className='navBarLogo'>
               
                 <img id='LogoImage' src='../src/assets/elektronki.png'/>
-               <Link id='LogoText'to='/'>Elektronki</Link>
+               <Link id='LogoText'to='/'><h1>Elektronki</h1></Link>
            <div></div>
                 
 
@@ -19,15 +19,15 @@ function NavBar() {
             <div className="navBarLinks">
 
             <Link to='/flashcards' className="navLinks">
-            FlashCards
+           <h1>Flashcards</h1> 
             </Link>
 
             <Link to='/exammode' className="navLinks">
-            Exam Mode
+            <h1>Exam Mode</h1>
             </Link>
 
             <Link to='/createcards' className="navLinks">
-            Create a card
+            <h1>New Card</h1>
             </Link>
 
             <Link to='/testingerrors' className="navLinks">
