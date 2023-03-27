@@ -13,7 +13,7 @@ function FlashCards(){
         <>
         <div className='FlashCards'>
             
-            <h2>FlashCards</h2>
+            <h2 className='PageTitle'>Flashcards</h2>
 
             <div className='childDiv'>
             <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfolder1')}}>

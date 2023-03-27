@@ -4,7 +4,7 @@ function ExamMode(){
         <div className='ExamMode'>
 
        
-            <h2>Choose a Topic</h2>
+            <h2 className='PageTitle'>Choose a Topic</h2>
        
 
             <div className='childDiv'>

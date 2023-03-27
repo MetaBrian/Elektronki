@@ -3,11 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 82%;
+  height: 87%;
   width: 100%;
   position: fixed; 
   left: 0%;
-  top: 9%;
+  top: 7%;
 }
 
 .ExamMode{
@@ -15,12 +15,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 82%;
+  height: 87%;
   width: 100%;
   position: fixed; 
   left: 0%;
-  top: 9%;
+  top: 7%;
   background-color: bisque;
+  font-size: larger;
 }
 
 .childDiv{
@@ -37,24 +38,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 82%;
+  flex-direction: column;
+  height: 87%;
   width: 100%;
   position: fixed; 
   left: 0%;
-  top: 9%;
+  top: 7%;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .FlashCards{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 82%;
+  height: 87%;
   width: 100%;
   position: fixed; 
   left: 0%;
-  top: 9%;
+  top: 7%;
   background-color: lightblue;
+  font-size: larger;
 }
 
 .FlashCardsButtons{
@@ -74,11 +78,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 82%;
+  height: 87%;
   width: 100%;
   position: fixed; 
   left: 0%;
-  top: 9%;
+  top: 7%;
+  font-size: larger;
+  
 }
 
 
@@ -92,39 +98,40 @@
 
   color: lightblue;
 
-  height: 9%;
+  height: 6%;
   width: 100%;
 
   position: fixed;
   bottom: 0;
   left: 0%;
+  font-size: medium;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .footerButtons{
-  background-color:lightblue;
-  border-style: groove;
-  border-color: lightblue;
-
-  height: 60%;
-  width: 20%;
- 
+  border-style: hidden;
+  /* border-radius: 50%;
+  border-color: lightblue; */
+  height: 90%;
+  width: 25%;
+ background-color: black;
 }
 
 .footerLeft{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  left: 1%;
   height: 100%;
-  width: 60%;
+  width: 70%;
 }
-
 
 
 .footerRight{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
-  position: relative;
   height: 100%;
   width: 30%;
 
@@ -135,7 +142,7 @@
   justify-content: space-between;
   background-color: black;
 
-  height: 9%;
+  height: 7%;
   width: 100%;
   
   position: fixed;
@@ -146,25 +153,34 @@
 
 .navBarButtons{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
-  width: 30%;
+  width: 20%;
+  color: lightblue;
+  
 }
 
 
 .navButtons{
-  background-color:lightblue;
-  border-style: groove;
-  border-color: lightblue;
+  background-color: black;
+  border-style: hidden;
+  height: 90%;
+  width: 40%;
+}
 
-  height: 60%;
-  width: 20%;
+.navButtons:hover{
+  background-color: white;
+}
 
+.footerButtons:hover{
+  background-color: white;
 }
 
 #LogoText{
-  color: black;
+  color: lightblue;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 100%;
 }
 
 #LogoImage{
@@ -174,7 +190,7 @@
 
 .navBarLogo{
   display: flex;
-  background-color: lightblue;
+  background-color: black;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -183,9 +199,9 @@
 
 .navBarLinks{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100%;
-  width: 50%;
+  width: 60%;
 }
 
 
@@ -194,25 +210,82 @@
   justify-content: center;
   align-items: center;
   color:lightblue;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 95%;
+  height: 100%;
+  width: 20%;
+
+}
+
+.navLinks:hover{
+  background-color: lightblue;
+  color: black;
 }
 
 
 
-#flipButton{
-  background-image: url('/src/assets/flashcard.png');
-  background-size: 100% 100%;
-  height: 9%;
-  width: 7%;
+
+#flipButtonFront{
+  height: 5%;
+  width: 5%;
   border-style: groove;
   border-color: black;
+}
+
+#flipButtonBack{
+  background-image: url('/src/assets/flashcard.png');
+  background-size: 100% 100%;
+  height: 5%;
+  width: 5%;
+  border-style: groove;
+  border-color: black;
+}
+
+#CardTitle{
+  position: relative;
+  top: 70%;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #cardFront{
   display: flex;
   background-image: url('/src/assets/flashcard.png');
   background-size: 100% 100%;
-  height: 75%;
+  height: 80%;
   width: 80%;
-  justify-content: center;
+  border-style: outset;
+  border-color: gray;
+  flex-direction: column;
+  align-items: center;
+}
 
+#cardBack{
+  display: flex;
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#textAreaBack{
+  height: 75%;
+  width: 80%
+}
+
+#textAreaFront{
+  position: relative;
+  top: 158%;
+  height: 209%;
+  width: 100%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: larger;
+  background-image: url('/src/assets/flashcard.png');
+  background-position-y: -305px;
+  background-repeat: no-repeat;
+  background-size: 100% 210%;
+}
+
+.PageTitle{
+  font-family: 'Permanent Marker', cursive;
 }

@@ -8,7 +8,7 @@ function NavBar() {
 
             <div className='navBarLogo'>
               
-                <img id='LogoImage' src='../src/assets/elektronki.png'/>
+            <img height='100%' width='37%'src='../src/assets/elektronki.gif' alt='Elektronki logo'/>
                <Link id='LogoText'to='/'><h1>Elektronki</h1></Link>
            <div></div>
                 
@@ -19,31 +19,32 @@ function NavBar() {
             <div className="navBarLinks">
 
             <Link to='/flashcards' className="navLinks">
-           <h1>Flashcards</h1> 
+           <h2>My Flashcards</h2> 
             </Link>
 
             <Link to='/exammode' className="navLinks">
-            <h1>Exam Mode</h1>
+                <h2>Test me</h2>
             </Link>
 
-            <Link to='/createcards' className="navLinks">
-            <h1>New Card</h1>
+            <Link to='/createcardsfront' className="navLinks">
+            <h2>Create a Card</h2>
             </Link>
 
-            <Link to='/testingerrors' className="navLinks">
-            Error Page
-            </Link>
+            {/* <Link to='/testingerrors' className="navLinks">
+            <h2>Error Page</h2>
+            </Link> */}
             </div>
 
 
             <div className='navBarButtons'>
+               
             <button className='navButtons' onClick={() => {window.open('https://github.com/MetaBrian/Elektronki','_blank'); console.log('clicked')}}>
-                <img height= '100%' width='100%'src='../src/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
+                <img height= '63%' width='100%'src='../src/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
             </button>
 
-            <button className='navButtons'>
-                <img height='100%' width='100%' src="../src/assets/light&dark-icon.png" alt='light and dark icon'/>
-            </button>
+            {/* <button className='navButtons'>
+                <img id='colorswitch'height='50%' width='100%' src="../src/assets/lightdark.png" alt='light and dark icon'/>
+            </button> */}
             </div>
 
         </div>
