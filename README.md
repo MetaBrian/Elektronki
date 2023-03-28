@@ -33,11 +33,11 @@ Pass your next exam || interview!</p>
 
 <br/>
 
-## <p align="center">Installation</p>
+## Installation
 
 <br/>
 
-## <p align="center">Tech Stack</p>
+## Tech Stack
 
 
 ![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=) 
@@ -55,3 +55,5 @@ Pass your next exam || interview!</p>
 <br/>
 
 ## License
+
+Upon contributing, you agree that your contributions will be licensed under its [MIT License](/LICENSE).
