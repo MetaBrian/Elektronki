@@ -12,7 +12,7 @@
 
 <br/>
 
-## <p align="center">About</p>
+## About
 <p align="center">
   Test yourself with Elektronki! 
   <br/>
@@ -25,7 +25,7 @@ Pass your next exam || interview!</p>
 
 <br/>
 
-## <p align="center">Preview</p>
+## Preview
 
 <p align="center">
   <img src='./src/assets/preview.png'/>
