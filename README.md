@@ -13,7 +13,9 @@
 <br/>
 
 ## About
-Elektronki is a flashcard app built for 
+<p align="center">Test yourself with Elektronki! 
+<br/>
+Create flashcards, study, @ pass your next exam || interview!</p>
 
 <br/>
 
