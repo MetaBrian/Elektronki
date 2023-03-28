@@ -13,19 +13,27 @@
 <br/>
 
 ## <p align="center">About</p>
-<p align="center">Test yourself with Elektronki! 
+<p align="center">
+  Test yourself with Elektronki! 
+  <br/>
 <br/>
-Create flashcards, study, @ pass your next exam || interview!</p>
+Create flashcards
+  <br/>
+Quiz yourself
+  <br/>
+Pass your next exam || interview!</p>
 
 <br/>
 
 ## <p align="center">Preview</p>
 
-<p align="center"></p>
+<p align="center">
+  <img src='./src/assets/preview.png'/>
+</p>
 
 <br/>
 
-## Installation
+## <p align="center">Installation</p>
 
 <br/>
 
