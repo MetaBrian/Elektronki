@@ -19,8 +19,7 @@ function CardFront (){
             </div>
 
             </div>
-               
-               {/* Link to card back below instead */}
+          
            <Link to='/createcardsback' id='flipButtonFront'>
                 <img height='100%' width='100%' src='../src/assets/flip.png'/>
            </Link>
