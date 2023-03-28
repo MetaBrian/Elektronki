@@ -35,6 +35,29 @@ Pass your next exam || interview!</p>
 
 ## Installation
 
+
+1. Fork Elektronki's repository
+
+<br/>
+
+2. Clone your forked repository & add your GitHub handle to the CLI
+
+   ```sh
+   git clone https://github.com/your-github-handle/SkaleSafe.git
+   ```
+   
+3. Install NPM packages with this CLI
+
+   ```sh
+   npm install
+   ```
+   
+4. Start up the app via the CLI
+
+   ```sh
+   npm run app
+   ```
+
 <br/>
 
 ## Tech Stack
