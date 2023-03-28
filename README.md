@@ -75,6 +75,8 @@ Pass your next exam || interview!
 
 ## Upcoming Features
 
+Elektronki aims to be available across all platforms & devices
+
 <br/>
 
 ## License
