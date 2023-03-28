@@ -1,4 +1,4 @@
-#  <span align="center">![ElektronkiLogo](https://media.giphy.com/media/3YAlcuGGUi3j9tgQQ7/giphy.gif)</span>
+#  <p align="center">![ElektronkiLogo](https://media.giphy.com/media/3YAlcuGGUi3j9tgQQ7/giphy.gif)</p>
 
 <br/>
 
