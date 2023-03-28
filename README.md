@@ -12,8 +12,8 @@
 
 <br/>
 
-## <p align="center">About</p>
-<p align="center">
+## About
+
   Test yourself with Elektronki! 
   <br/>
 <br/>
@@ -21,11 +21,11 @@ Create flashcards
   <br/>
 Quiz yourself
   <br/>
-Pass your next exam || interview!</p>
+Pass your next exam || interview!
 
 <br/>
 
-## <p align="center">Preview</p>
+## Preview
 
 <p align="center">
   <img src='./src/assets/preview.png'/>
@@ -33,11 +33,34 @@ Pass your next exam || interview!</p>
 
 <br/>
 
-## <p align="center">Installation</p>
+## Installation
+
+
+1. Fork Elektronki's repository
 
 <br/>
 
-## <p align="center">Tech Stack</p>
+2. Clone your forked repository & add your GitHub handle to the CLI
+
+   ```sh
+   git clone https://github.com/your-github-handle/SkaleSafe.git
+   ```
+   
+3. Install NPM packages with this CLI
+
+   ```sh
+   npm install
+   ```
+   
+4. Start up the app via the CLI
+
+   ```sh
+   npm run app
+   ```
+
+<br/>
+
+## Tech Stack
 
 
 ![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=) 
@@ -52,6 +75,10 @@ Pass your next exam || interview!</p>
 
 ## Upcoming Features
 
+Elektronki aims to be available across all platforms & devices
+
 <br/>
 
 ## License
+
+Upon contributing, you agree that your contributions will be licensed under its [MIT License](/LICENSE).
