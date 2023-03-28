@@ -13,7 +13,7 @@
 <br/>
 
 ## About
-<p align="center">
+
   Test yourself with Elektronki! 
   <br/>
 <br/>
@@ -21,7 +21,7 @@ Create flashcards
   <br/>
 Quiz yourself
   <br/>
-Pass your next exam || interview!</p>
+Pass your next exam || interview!
 
 <br/>
 
