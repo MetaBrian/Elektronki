@@ -1,4 +1,4 @@
-const Card = require('./cardModel');
+import Card from './cardModel.js'
 
 cardController = {
 
