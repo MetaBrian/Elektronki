@@ -1,18 +1,36 @@
-import NavBar from "./components/navBar"
-import CardFront from "./components/cardFront"
-import ContactMe from "./components/contactMe"
+import NavBar from "./components/NavBar";
+import CardFront from "./components/NewCardFront";
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/Home'
+import ErrorPage from "./components/ErrorPage";
+import ExamMode from "./components/ExamMode";
+import FlashCards from "./components/FlashCards";
+import ContactMe from "./components/Footer";
+import NewCardBack from "./components/NewCardBack";
 
 function App() {
 
   return (
-    <>
+    <>  
+    <div className='App'>
       <NavBar/>
+     
       <br/>
+
+      <Routes>
+        <Route path='/'element={<Home/>}/>
+        <Route path='/flashcards' element={<FlashCards/>}/>
+        <Route path='/createcardsfront' element={<CardFront/>}/>
+        <Route path='/createcardsback' element={<NewCardBack/>}/>
+        <Route path='/exammode' element={<ExamMode/>}/>
+        <Route path='*' element={<ErrorPage/>}/>
+      </Routes>      
+
       <br/>
-      <CardFront/>
-      <br/>
-      <br/>
+      
       <ContactMe/>
+
+      </div> 
     </>
   )
 }
