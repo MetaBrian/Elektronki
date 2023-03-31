@@ -1,16 +1,17 @@
-import Card from './cardModel.js'
+const Card = require('./cardModel.cjs')
 
 cardController = {
 
     newCard(req,res,next){
         try{
+            const {title, content} = req
             console.log(req)
             Card.create({
-                title: '',
-                content:''
+                title: {title},
+                content:{content}
             })
-            console.log(res)
-            return next();
+            .then(
+            next());
         }
         catch(error){
             console.log('this is your error', error)
@@ -19,4 +20,4 @@ cardController = {
 
 };
 
-export default cardController;
+module.exports = cardController;

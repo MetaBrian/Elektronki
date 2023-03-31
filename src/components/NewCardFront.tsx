@@ -1,11 +1,10 @@
 import {Link} from 'react-router-dom'
-// import SubmitText from './submitCard';
 
 function CardFront (){
 
 
-    // const cardTitle = document.getElementById('CardTitle').value;
-    // const content = document.getElementById('textAreaFront').value
+    const cardTitle = document.getElementById('CardTitle')
+    const content = document.getElementById('textAreaFront')
    
     return(
         <>
