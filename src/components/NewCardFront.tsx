@@ -1,7 +1,11 @@
 import {Link} from 'react-router-dom'
+// import SubmitText from './submitCard';
 
 function CardFront (){
 
+
+    // const cardTitle = document.getElementById('CardTitle').value;
+    // const content = document.getElementById('textAreaFront').value
    
     return(
         <>
@@ -19,7 +23,8 @@ function CardFront (){
             </div>
 
             </div>
-          
+          <button onClick={()=>{}}>testingMongo</button>
+
            <Link to='/createcardsback' id='flipButtonFront'>
                 <img height='100%' width='100%' src='../src/assets/flip.png'/>
            </Link>
