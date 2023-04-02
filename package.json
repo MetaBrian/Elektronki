@@ -2,14 +2,16 @@
   "name": "Elektronki",
   "version": "1.0.0",
   "description": "Elektronki, a flashcard app",
-  "main": "server.mjs",
+  "main": "src/App.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "backend": "nodemon server/server.js",
-    "appr": "concurrently 'npm run backend' 'npm run frontend'"
+    "app": "concurrently 'npm run backend' 'npm run frontend'",
+    "electron": "electron ."
+
   },
   "type": "commonjs",
   "repository": {
@@ -44,6 +46,11 @@
     "vite": "^4.2.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "electron": "^23.2.1",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "nodemon": "^2.0.22"
   }
 }
