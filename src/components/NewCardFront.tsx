@@ -4,12 +4,12 @@ import {useState, useEffect} from 'react';
 
 function CardFront (){
 
-    const [message, setMessage] = useState("");
-    useEffect(() => {
-        fetch("http://localhost:8080/newCard", {method:'POST'})
-          .then((res) => res.json())
-          .then((data) => {setMessage(data.message)});
-      }, []);
+    // const [message, setMessage] = useState("");
+    // useEffect(() => {
+    //     fetch("http://localhost:8080/newCard", {method:'POST'})
+    //       .then((res) => res.json())
+    //       .then((data) => {setMessage(data.message)});
+    //   }, []);
 
     return(
         <>
@@ -27,7 +27,9 @@ function CardFront (){
             </div>
 
             </div>
-          <button onClick={()=>{console.log({message})}}>testingMongo</button>
+          <button onClick={()=>{fetch("http://localhost:8080/newCard", {method:'POST'})
+          .then((res) => res.json())
+          .then((data) => {data.message;})}}>testingMongo</button>
 
            <Link to='/createcardsback' id='flipButtonFront'>
                 <img height='100%' width='100%' src='../src/assets/flip.png'/>

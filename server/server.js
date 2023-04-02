@@ -12,9 +12,8 @@ app.get("/message", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
 
-app.post('/newCard', cardController.createCard, (req, res) =>{
-  cardController.createCard(req.body.frontTitle, req.body.frontContent)
-    res.status(200).json({message: 'df'});
+app.post('/newCard', cardController.createCard, (req, res, next) =>{
+  cardController.createCard()
 })
 
 

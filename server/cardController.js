@@ -7,8 +7,8 @@ const cardController = {
         try{
             const {frontTitle, frontContent} = await req.body;
             await Card.create({
-                title: 'testingcontroller',
-                content: 'testingcontroller'
+                title: frontTitle,
+                content: frontContent
             }).then(
                 card => {
                 res.locals.card = card;
