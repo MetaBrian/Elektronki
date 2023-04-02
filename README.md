@@ -43,7 +43,7 @@ Pass your next exam || interview!
 2. Clone your forked repository & add your GitHub handle to the CLI
 
    ```sh
-   git clone https://github.com/your-github-handle/SkaleSafe.git
+   git clone https://github.com/your-github-handle/Elektronki.git
    ```
    
 3. Install NPM packages with this CLI
