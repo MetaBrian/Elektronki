@@ -85,4 +85,6 @@ Elektronki aims to be available across all platforms & devices
 
 ## License
 
+Please feel free to reach out if you have any comments or concerns!
+
 Upon contributing, you agree that your contributions will be licensed under its [MIT License](/LICENSE).

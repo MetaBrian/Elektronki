@@ -24,7 +24,7 @@ function CardFront (){
             </div>
           <button onClick={()=>{
             setcardContentFront(document.getElementById('textAreaFront').value);
-            useEffect(()=>{console.log(cardContentFront, [cardContentFront], 'this is your state')})
+          
             // createCard(document.getElementById('CardTitle').value,  document.getElementById('textAreaFront').value)
             }}>testingMongo</button>
 
