@@ -7,6 +7,8 @@ import ExamMode from "./components/ExamMode";
 import FlashCards from "./components/FlashCards";
 import ContactMe from "./components/Footer";
 import NewCardBack from "./components/NewCardBack";
+import {useState, useEffect} from 'react';
+
 
 function App() {
 
@@ -14,7 +16,6 @@ function App() {
     <>  
     <div className='App'>
       <NavBar/>
-     
       <br/>
 
       <Routes>

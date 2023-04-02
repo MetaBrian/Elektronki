@@ -1,11 +1,16 @@
 import {Link} from 'react-router-dom'
 
+import {useState, useEffect} from 'react';
+
 function CardFront (){
 
+    const [message, setMessage] = useState("");
+    useEffect(() => {
+        fetch("http://localhost:8080/newCard", {method:'POST'})
+          .then((res) => res.json())
+          .then((data) => {setMessage(data.message)});
+      }, []);
 
-    const cardTitle = document.getElementById('CardTitle')
-    const content = document.getElementById('textAreaFront')
-   
     return(
         <>
         <div className='newCards'>
@@ -14,15 +19,15 @@ function CardFront (){
             <div id='cardFront'>
    
                     <form>
-                        <input id='CardTitle' type='text' placeholder="Card Title"></input>
+                        <input id='CardTitle' type='text' placeholder="Card Title" name='frontTitle'></input>
                     </form>
             
             <div id='cardFrontText'>
-            <textarea id='textAreaFront' placeholder='Enter content here' rows={4} cols={50}></textarea>
+            <textarea id='textAreaFront' placeholder='Enter content here' rows={4} cols={50} name='frontContent'></textarea>
             </div>
 
             </div>
-          <button onClick={()=>{}}>testingMongo</button>
+          <button onClick={()=>{console.log({message})}}>testingMongo</button>
 
            <Link to='/createcardsback' id='flipButtonFront'>
                 <img height='100%' width='100%' src='../src/assets/flip.png'/>
