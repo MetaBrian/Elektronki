@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "backend": "nodemon server/server.js",
-    "together": "concurrently 'npm run backend' 'npm run frontend'"
+    "appr": "concurrently 'npm run backend' 'npm run frontend'"
   },
   "type": "commonjs",
   "repository": {
