@@ -52,9 +52,8 @@ Pass your next exam || interview!
    npm install
    ```
 
-4. Connect your Mongo database
-<br/>
-Create a '.env' file in the root directory & paste in your URI
+4. Create a '.env' file in the root directory & paste in your URI. This will connect the app to your Mongo database
+
 
     ```js
     MONGO_URI = 'YourMongoDbURI';
