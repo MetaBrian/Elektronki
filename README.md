@@ -28,7 +28,7 @@ Pass your next exam || interview!
 ## <p align="center">Preview</p>
 
 <p align="center">
-  <img src='./src/assets/preview.png'/>
+  <img src='./client/assets/preview.png'/>
 </p>
 
 <br/>
