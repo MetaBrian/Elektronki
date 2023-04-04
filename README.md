@@ -51,8 +51,15 @@ Pass your next exam || interview!
    ```sh
    npm install
    ```
-   
-4. Start up the app via the CLI
+
+4. Connect your Mongo database
+  a. Create a '.env' file in the root directory & paste in your URI
+
+  ```js
+  MONGO_URI = 'YourMongoDbURI';
+  ```
+
+5. Start up the app via the CLI
 
    ```sh
    npm run app
