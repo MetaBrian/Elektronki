@@ -53,7 +53,8 @@ Pass your next exam || interview!
    ```
 
 4. Connect your Mongo database
-  a. Create a '.env' file in the root directory & paste in your URI
+<br/>
+Create a '.env' file in the root directory & paste in your URI
 
     ```js
     MONGO_URI = 'YourMongoDbURI';
