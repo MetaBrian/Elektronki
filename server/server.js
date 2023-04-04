@@ -1,12 +1,15 @@
+const dotenv = require('dotenv/config');
+const URI = process.env.MONGO_URI;
+
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const Card =require("./cardModel");
+
+
+const Card = require("./cardModel");
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const dotenv = require('dotenv/config');
 
-const URI = process.env.MONGO_URI
 
 app.use(cors());
 app.use(express.json());
@@ -17,7 +20,10 @@ mongoose.connect(URI)
     }) 
     .catch((err) => {
     console.log(err)
-})
+});
+
+
+//for fetch requests made by the front-end
 
 app.get("/message", (req, res) => {
   res.json({ message: "Hello from server!" });
@@ -31,6 +37,10 @@ app.post('/newCard', async (req, res, next) =>{
  return next();
 })
 
+
+
+
+//Global error handler
 
 app.use('*', (err, req, res, next) => {
     const defaultErr = {

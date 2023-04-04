@@ -2,7 +2,7 @@
   "name": "Elektronki",
   "version": "1.0.0",
   "description": "Elektronki, a flashcard app",
-  "main": "src/App.tsx",
+  "main": "./Electron/electronMain.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "vite",
@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "backend": "nodemon server/server.js",
     "app": "concurrently 'npm run backend' 'npm run frontend'",
-    "electron": "electron ."
+    "electron": "electron .",
+    "electronapp": "npm run app & npm run electron"
 
   },
   "type": "commonjs",

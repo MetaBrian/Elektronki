@@ -2,7 +2,7 @@
 
 <br/>
 
-## Table of Contents
+## <p align="center"> Table of Contents </p>
 - [About](#About)
 - [Preview](#Preview)
 - [Installation](#Installation)
@@ -12,7 +12,7 @@
 
 <br/>
 
-## About
+## <p align="center">About</p>
 
   Test yourself with Elektronki! 
   <br/>
@@ -25,7 +25,7 @@ Pass your next exam || interview!
 
 <br/>
 
-## Preview
+## <p align="center">Preview</p>
 
 <p align="center">
   <img src='./src/assets/preview.png'/>
@@ -33,7 +33,7 @@ Pass your next exam || interview!
 
 <br/>
 
-## Installation
+## <p align="center">Installation</p>
 
 
 1. Fork Elektronki's repository
@@ -60,7 +60,7 @@ Pass your next exam || interview!
 
 <br/>
 
-## Tech Stack
+## <p align="center">Tech Stack</p>
 
 
 ![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=) 
@@ -90,13 +90,13 @@ Pass your next exam || interview!
 
 <br/>
 
-## Upcoming Features
+## <p align="center">Upcoming Features</p>
 
 Elektronki aims to be available across all platforms & devices
 
 <br/>
 
-## License
+## <p align="center">License </p>
 
 Please feel free to reach out if you have any comments or concerns!
 

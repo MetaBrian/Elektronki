@@ -26,7 +26,7 @@ function NewCardBack(){
             </div>
           
             <Link to='/createcardsfront' id='flipButtonBack'> 
-            <img height='100%' width='100%'src='../src/assets/flip.png' alt='flip icon'/>
+            <img height='100%' width='100%'src='../client/assets/flip.png' alt='flip icon'/>
            </Link>
         
 

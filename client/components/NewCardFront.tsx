@@ -29,7 +29,7 @@ function CardFront (){
             }}>testingMongo</button>
 
            <Link to='/createcardsback' id='flipButtonFront'>
-                <img height='100%' width='100%' src='../src/assets/flip.png'/>
+                <img height='100%' width='100%' src='../client/assets/flip.png'/>
            </Link>
 
         </div>
