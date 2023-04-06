@@ -17,10 +17,10 @@ function ContactMe() {
          <div className='footerRight'>
          <h4>Contact me! </h4>
              <button className='footerButtons' onClick={()=>{window.open('https://github.com/MetaBrian','_blank')}}>
-                    <img height='70%' width='100%'src='../client/assets/GitHub-logo.png' alt='Github Logo'/>
+                    <img height='70%' width='100%'src='../src/assets/GitHub-logo.png' alt='Github Logo'/>
                 </button>
                 <button className='footerButtons' onClick={()=>{window.open('https://www.linkedin.com/in/leonardo-brian-campos/','_blank')}}>
-                    <img height='60%' width='60%'src='../client/assets/linkedinicon.png' alt='linkedin icon'/>
+                    <img height='60%' width='60%'src='../src/assets/linkedinicon.png' alt='linkedin icon'/>
                 </button>
                
               

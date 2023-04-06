@@ -3,7 +3,7 @@ import CardFront from "./components/NewCardFront";
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home'
 import ErrorPage from "./components/ErrorPage";
-import ExamMode from "./components/ExamMode";
+import ExamMode from "./components/QuizMe";
 import FlashCards from "./components/FlashCards";
 import ContactMe from "./components/Footer";
 import NewCardBack from "./components/NewCardBack";

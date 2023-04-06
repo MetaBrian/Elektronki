@@ -6,16 +6,16 @@ function NewCardBack(){
         <div className='newCards'>
 
 
-
-            <h2 className='PageTitle'>Create a Card!</h2>
+        <h2 className='PageTitle'>Create a Card!</h2>
+            
 
             <div id='cardBack'>
-            
+           
            
                 <textarea id='textAreaBack' placeholder='Enter your text here' rows={4} cols={100}></textarea>
 
      
-                <Link to='/createcardsfront' id='SubmitButton' className='SubmitButton' onClick={()=>{alert('Successfully created a flashcard!')}}>Submit</Link>
+                
            
   
 
@@ -25,8 +25,10 @@ function NewCardBack(){
 
             </div>
           
+            <Link to='/createcardsfront' id='SubmitButton' className='SubmitButton' onClick={()=>{alert('Successfully created a flashcard!')}}>Submit</Link>
+
             <Link to='/createcardsfront' id='flipButtonBack'> 
-            <img height='100%' width='100%'src='../client/assets/flip.png' alt='flip icon'/>
+            <img height='100%' width='100%'src='../src/assets/flip.png' alt='flip icon'/>
            </Link>
         
 

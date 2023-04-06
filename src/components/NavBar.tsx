@@ -8,7 +8,7 @@ function NavBar() {
 
             <div className='navBarLogo'>
               
-            <img height='100%' width='37%'src='../client/assets/elektronki.gif' alt='Elektronki logo'/>
+            <img height='100%' width='37%'src='../src/assets/elektronki.gif' alt='Elektronki logo'/>
                <Link id='LogoText'to='/'><h1>Elektronki</h1></Link>
            <div></div>
                 
@@ -22,13 +22,15 @@ function NavBar() {
            <h2>My Flashcards</h2> 
             </Link>
 
-            <Link to='/exammode' className="navLinks">
-                <h2>Test me</h2>
-            </Link>
-
             <Link to='/createcardsfront' className="navLinks">
             <h2>Create a Card</h2>
             </Link>
+
+            <Link to='/exammode' className="navLinks">
+                <h2>Quiz me</h2>
+            </Link>
+
+
 
             {/* <Link to='/testingerrors' className="navLinks">
             <h2>Error Page</h2>
@@ -39,7 +41,7 @@ function NavBar() {
             <div className='navBarButtons'>
                
             <button className='navButtons' onClick={() => {window.open('https://github.com/MetaBrian/Elektronki','_blank'); console.log('clicked')}}>
-                <img height= '63%' width='100%'src='../client/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
+                <img height= '63%' width='100%'src='../src/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
             </button>
 
             {/* <button className='navButtons'>

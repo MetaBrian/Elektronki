@@ -1,15 +1,13 @@
 const dotenv = require('dotenv/config');
-const URI = process.env.MONGO_URI;
-
 const express = require("express");
 const cors = require("cors");
-const app = express();
-
-
 const Card = require("./cardModel");
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const app = express();
 
+const URI = process.env.MONGO_URI;
+
+const Schema = mongoose.Schema;
 
 app.use(cors());
 app.use(express.json());
@@ -42,7 +40,7 @@ app.post('/newCard', async (req, res, next) =>{
 
 //Global error handler
 
-app.use('*', (err, req, res, next) => {
+app.use('*', (err, res) => {
     const defaultErr = {
       log: 'Express error handler caught unknown middleware error',
       status: 400,
