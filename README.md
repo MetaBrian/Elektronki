@@ -28,7 +28,7 @@ Pass your next exam || interview!
 ## <p align="center">Preview</p>
 
 <p align="center">
-  <img src='./client/assets/preview.png'/>
+  <img src='./src/assets/preview.png' alt='a screenshot preview of Elektronki'/>
 </p>
 
 <br/>
