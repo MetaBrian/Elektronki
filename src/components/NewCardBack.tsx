@@ -1,6 +1,8 @@
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 function NewCardBack(){
+
+
     return (
         <>
         <div className='newCards'>
@@ -17,8 +19,11 @@ function NewCardBack(){
      
         
             </div>
-          
-            <Link to='/createcardsfront' id='SubmitButton' className='SubmitButton' onClick={()=>{alert('Successfully created a flashcard!')}}>Submit</Link>
+            {/* onClick={// 
+            createCard(document.getElementById('CardTitle').value,  document.getElementById('textAreaFront').value), document.getElementById('textAreaBack).value
+            } */}
+            <Link to='/createcardsfront' id='SubmitButton' className='SubmitButton' 
+               >Submit</Link>
 
             <Link to='/createcardsfront' id='flipButtonBack'> 
             <img height='100%' width='100%'src='../src/assets/flip.png' alt='flip icon'/>

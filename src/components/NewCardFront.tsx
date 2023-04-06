@@ -1,10 +1,29 @@
 import {Link} from 'react-router-dom'
+import React, { Component } from 'react'
 
-function CardFront (){
+class CardFront extends Component {
+    constructor (props:string) {
+        super (props)
 
+        this.state = {title:'', frontContent:''}
 
-    return(
-        <>
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick(){
+        this.setState({
+            title: document.getElementById('CardTitle').value, 
+        frontContent:document.getElementById('textAreaFront').value
+        }, ()=>console.log(this.state, 'this is your state')
+        )
+    }
+
+   
+
+    render(){
+        
+        return(
+            <>
         <div className='newCards'>
             <h2 className='PageTitle'>Create a Card!</h2>
 
@@ -19,19 +38,25 @@ function CardFront (){
          
 
             </div>
-    
-           <Link to='/createcardsback' id='flipButtonFront' onClick={()=>{
-          console.log('link clicked')
-          // createCard(document.getElementById('CardTitle').value,  document.getElementById('textAreaFront').value)
-          }}>
+<button onClick={()=>{
+          {this.handleClick()}}}></button>
+
+           <Link to='/createcardsback'
+           onClick={()=>{
+          {this.handleClick();}
+          }}
+             id='flipButtonFront' >
                 <img height='100%' width='100%' src='../src/assets/flip.png'/>
            </Link>
 
         </div>
         </>
-    
-    )
+
+        )
+    }
 
 }
 
 export default CardFront;
+
+

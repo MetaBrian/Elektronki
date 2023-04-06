@@ -22,7 +22,7 @@ function App() {
         <Route path='/'element={<Home/>}/>
         <Route path='/flashcards' element={<FlashCards/>}/>
         <Route path='/createcardsfront' element={<CardFront/>}/>
-        <Route path='/createcardsback' element={<NewCardBack/>}/>
+        <Route path='/createcardsback' element={<NewCardBack/>} />
         <Route path='/exammode' element={<ExamMode/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>      
