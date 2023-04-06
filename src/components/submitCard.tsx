@@ -8,7 +8,6 @@ function createCard(title:string, frontContent: string, backContent: string){
             backContent: backContent
         })        
     })
-    .then(res => console.log(res, 'this is your res'))
     .catch(error => console.log(error))
     }
     //add an alert for users if submit is not working

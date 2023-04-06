@@ -1,17 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import {Link, useLocation} from 'react-router-dom';
 
 
     function CardFront(){
-        const x = useLocation();
+        const cardBack = useLocation();
         const [title, setTitle] = useState('')
         const [frontContent, setFrontContent] = useState('')
-        const y = useEffect(() => console.log(title, frontContent))
+        let header:string; 
+        if (cardBack.state !== null){
+            header='Successfully created a card!'
+            
+        }
+        else{
+            header ='Create a Card!'
+        }
         
         return(
             <>
         <div className='newCards'>
-            <h2 className='PageTitle'>Create a Card!</h2>
+            <h2 className='PageTitle'>{header}</h2>
 
             <div id='cardFront'>
    
@@ -28,8 +35,8 @@ import {Link, useLocation} from 'react-router-dom';
             </div>
 
            <Link to='/createcardsback'
-
-          onClick={()=> {x.state=title ; console.log(x, title)}}
+            state={{title:title, frontContent:frontContent}}
+            onClick={()=>console.log(cardBack.state)}
              id='flipButtonFront' >
                 <img height='100%' width='100%' src='../src/assets/flip.png'/>
            </Link>

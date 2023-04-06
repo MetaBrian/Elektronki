@@ -1,11 +1,11 @@
 import {Link, useLocation} from 'react-router-dom';
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
+import createCard from './submitCard';
 
 function NewCardBack(){
 
     const [backContent, setBackContent] = useState('')
-    useEffect(()=> console.log(backContent))
-    const x = useLocation()
+    const cardFront = useLocation()
 
     return (
         <>
@@ -15,22 +15,14 @@ function NewCardBack(){
         <h2 className='PageTitle'>Create a Card!</h2>
             
 
-            <div id='cardBack'>
-           
-           
-                <textarea id='textAreaBack' placeholder={ backContent ? 'false': 'Enter your text here' } rows={4} cols={100} onChange={(e)=>setBackContent(e.target.value)}></textarea>
-
-     
-        
+            <div id='cardBack'>           
+                <textarea id='textAreaBack' placeholder='Enter your text here' rows={4} cols={100} onChange={(e)=>setBackContent(e.target.value)}></textarea>
             </div>
-            {/* onClick={// 
-            createCard(document.getElementById('CardTitle').value,  document.getElementById('textAreaFront').value), document.getElementById('textAreaBack).value
-            } */}
-        
 
-            <Link to='/createcardsfront' id='flipButtonBack' onClick={()=>console.log(x)}
-            > 
-            <img height='100%' width='100%'src='../src/assets/flip.png' alt='flip icon'/>
+            <Link to='/createcardsfront' state={backContent} id='SubmitButton' className='SubmitButton' onClick={()=>{createCard(cardFront.state.title, cardFront.state.frontContent, document.getElementById('textAreaBack').value); console.log(backContent)}}>Submit</Link>
+           
+            <Link to='/createcardsfront' id='flipButtonBack'> 
+                <img height='100%' width='100%'src='../src/assets/flip.png' alt='flip icon'/>
            </Link>
         
 

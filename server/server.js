@@ -28,11 +28,11 @@ app.get("/message", (req, res) => {
 });
 
 app.post('/newCard', async (req, res, next) =>{
-  // console.log(req.body);
   const { title, frontContent, backContent } = await req.body;
- await Card.create({title: req.body.title, frontContent: req.body.frontContent, backContent: req.body.backContent });
-  await res.json();
- return next();
+ try{await Card.create({title: req.body.title, frontContent: req.body.frontContent, backContent: req.body.backContent })
+}
+catch(err){return next(err)}
+// await res.json();
 })
 
 
