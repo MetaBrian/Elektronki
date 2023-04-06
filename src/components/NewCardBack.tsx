@@ -15,14 +15,7 @@ function NewCardBack(){
                 <textarea id='textAreaBack' placeholder='Enter your text here' rows={4} cols={100}></textarea>
 
      
-                
-           
-  
-
-    
-          
-    
-
+        
             </div>
           
             <Link to='/createcardsfront' id='SubmitButton' className='SubmitButton' onClick={()=>{alert('Successfully created a flashcard!')}}>Submit</Link>
