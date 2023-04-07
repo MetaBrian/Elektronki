@@ -6,13 +6,9 @@ import {Link, useLocation} from 'react-router-dom';
         const cardBack = useLocation();
         const [title, setTitle] = useState('')
         const [frontContent, setFrontContent] = useState('')
-        let header:string; 
-        if (cardBack.state !== null){
-            header='Successfully created a card!'
-            
-        }
-        else{
-            header ='Create a Card!'
+        let header:string='Create a card'; 
+        if ((cardBack.state !== null) && (cardBack.state.frontContent === true)){
+            header ='Successfully created a card!'
         }
         
         return(
