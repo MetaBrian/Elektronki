@@ -10,6 +10,17 @@ import {Link, useLocation} from 'react-router-dom';
         if ((cardBack.state !== null) && (cardBack.state.frontContent === true) && (cardBack.state.backContent !=='')){
             header ='Successfully created a card!'
         }
+        else if ((cardBack.state !== null) && (cardBack.state.backContent === '') && (cardBack.state.frontContent === false))
+        {
+            header='Please fill out both sides of the card!!!'
+        }
+        else if((cardBack.state !== null) && (cardBack.state.frontContent === false)){
+            header='Please fill out the front of the card & try again!'
+        }
+        else if((cardBack.state !== null && (cardBack.state.backContent === '') &&(cardBack.state.frontContent === true))){
+            header='Please fill out the back of the card & try again!'
+        }
+      
         
         return(
             <>
