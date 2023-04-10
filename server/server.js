@@ -23,8 +23,10 @@ mongoose.connect(URI)
 
 //for fetch requests made by the front-end
 
-app.get("/message", (req, res) => {
-  res.json({ message: "Hello from server!" });
+app.get("/message", async (req, res, next) => {
+  try{const cards = await Card.find({});
+  await res.json( { find: cards });}
+  catch(err) {return next(err);}
 });
 
 app.post('/newCard', async (req, res, next) =>{
