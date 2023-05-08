@@ -1,5 +1,6 @@
 
 import {useState, useEffect} from 'react';
+import Folder from './Folder';
 
 function Home (){
 
@@ -16,19 +17,16 @@ function Home (){
     fetch("http://localhost:8080/getCards")
     .then((res) => res.json())
     .then((data) => {data.forEach((e: any)=>
-        x.push(
-            <>
       
-        </>
-        )); console.log(data)});
+        x.push((e.title))); console.log(data)});
 
-
+        console.log(x, 'this is x after the fetch')
 
     return (
         <>
         <div className='Home'>
-            <h2 className='HomeText'>Welcome!  {x}</h2>
-           <button onClick={()=>console.log(x[0])}></button>
+            <h2 className='HomeText'>Welcome!{x[0]}</h2>
+           <button onClick={()=> {console.log(x)}}></button>
             {/* <h2>{message}</h2>  */}
         </div>
         </>
