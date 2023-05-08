@@ -1,35 +1,52 @@
 function FlashCards(){
-    //get total cards from db
-    const total: number = 99;
 
-    //get folder card total from db
-    const folder1: number = 20;
-    const folder2: number = 79;
+    interface CardTitles {
+        title: string
+    }
 
-    //get folder name from db
-    const dbFolder: string = 'placeholder';
+    const folders:string[] = [];
 
+    fetch("http://localhost:8080/getCards")
+    .then((res) => res.json())
+    .then((data) => {data.forEach((e: CardTitles)=>
+      
+        folders.push((e.title))); console.log(data)});
+  
     return (
         <>
         <div className='FlashCards'>
             
             <h2 className='PageTitle'>Flashcards</h2>
 
-            <div className='childDiv'>
-            <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfolder1')}}>
-                <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
-                <p>Folder 1 ({folder1})</p>
-            </button>
+            <div id='myFlashCards'className='childDiv'>
 
-            <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfolder2')}}>
-                <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
-                Folder 2 ({folder2})
-            </button>
 
-            <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfoldertotal')}}>
+
+
+
+
+            <button id='button1' className='FlashCardsButtons' onClick={()=>{console.log(folders)}}>
                 <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
-                All Cards ({total})
+                <p>{folders[0]}</p>
             </button>
+ 
+            <button id='folder2' className='FlashCardsButtons' onClick={()=>{
+
+            for (let i=0; i < folders.length; i++){
+            const buttonFolders = document.createElement("button")
+            buttonFolders.textContent=folders[i]
+            document.getElementById('myFlashCards').appendChild(buttonFolders)
+            }
+
+            }}>
+                <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
+              
+            </button>
+            
+
+
+
+
             </div>
 
         </div>
