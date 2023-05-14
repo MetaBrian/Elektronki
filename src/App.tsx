@@ -7,6 +7,7 @@ import ExamMode from "./components/QuizMe";
 import FlashCards from "./components/FlashCards";
 import ContactMe from "./components/Footer";
 import NewCardBack from "./components/NewCardBack";
+import DisplayCards from "./components/DisplayCards";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/createcardsfront' element={<CardFront/>}/>
         <Route path='/createcardsback' element={<NewCardBack/>} />
         <Route path='/exammode' element={<ExamMode/>}/>
+        <Route path='/displayCards' element={<DisplayCards/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>      
 

@@ -7,7 +7,7 @@ function ExamMode(){
             <h2 className='PageTitle'>Choose a Topic</h2>
        
 
-            <div className='childDiv'>
+            <div className='myFlashCards'>
             <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfolder1')}}>
                 <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
                 <p>Folder 1 (20)</p>
