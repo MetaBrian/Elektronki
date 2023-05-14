@@ -16,7 +16,7 @@ function NewCardBack(){
         <div className='newCards'>
 
 
-        <h2 className='PageTitle'>Create a Card!</h2>
+        <h2 className='PageTitle'>Create a card!</h2>
             
 
             <div id='cardBack'>           

@@ -7,8 +7,6 @@ import ExamMode from "./components/QuizMe";
 import FlashCards from "./components/FlashCards";
 import ContactMe from "./components/Footer";
 import NewCardBack from "./components/NewCardBack";
-import {useState, useEffect} from 'react';
-
 
 function App() {
 
