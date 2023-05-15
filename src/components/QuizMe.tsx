@@ -9,7 +9,7 @@ function ExamMode(){
 
             <div className='QuizMe'>
          
-            <h3>Coming Soon...</h3>
+            <h3 className='PageTitle'>Coming Soon...</h3>
 
             </div>
             

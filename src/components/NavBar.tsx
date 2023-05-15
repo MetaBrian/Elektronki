@@ -2,18 +2,13 @@ import { Link } from "react-router-dom"
 
 function NavBar() {
 
+    const allCards: string[] = [];
 
-    interface CardTitles {
-        title: string
-    }
-
-    const folders:string[] = [];
 
     fetch("http://localhost:8080/getCards")
     .then((res) => res.json())
-    .then((data) => {data.forEach((e: CardTitles)=>
-      
-        folders.push((e.title))); console.log(data)});
+    .then((data) => {
+        allCards.push(data)});
 
     return (
         <>
@@ -30,8 +25,8 @@ function NavBar() {
                     <h2>Create a Card</h2>
                 </Link>
                 <Link to='/flashcards' 
-                state={folders}
-                onClick={()=>console.log(folders)}
+                state={[allCards]}
+                onClick={()=>console.log()}
                 className="navLinks">
                     <h2>My Flashcards</h2> 
                 </Link>

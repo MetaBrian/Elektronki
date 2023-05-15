@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 
 function FlashCards(){
 
-    const fetchedFolders = useLocation();
-
+    const fetchedCards = useLocation().state[0][0];
+    console.log(fetchedCards);
 
     const teststring = [];
-    for (let i=0; i < fetchedFolders.state.length; i++){
+    for (let i=0; i < fetchedCards.length; i++){
   
-      teststring.push(<Link to='/displayCards' key={`${[i]}`} state={fetchedFolders.state[i]} className='displayCards'>{fetchedFolders.state[i]}</Link>)}
+      teststring.push(<Link to='/displayCards' key={`${fetchedCards[i]._id}`} state={fetchedCards[i]} className='displayCards'>{fetchedCards[i].title}</Link>)}
 
   
     return (

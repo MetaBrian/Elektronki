@@ -3,18 +3,9 @@ import { useLocation } from "react-router-dom";
  function DisplayCards (){
 
     const test = useLocation().state;
+    console.log(test)
 
-    const cards = [];
-    
-     fetch("http://localhost:8080/getCards")
-    .then((res) => res.json())
-    .then((data) => {
-        for (let i=0; i<data.length; i++){
-            if (data[i].title === test){
-                cards.push(<button key={`${[i]}`} >{data[i].frontContent}</button>)
-            }
-        }
-         });
+
 
 
     return (
@@ -25,8 +16,19 @@ import { useLocation } from "react-router-dom";
             
             <div className='myFlashCards'>
 
-            {[...cards]}
-               
+            
+               <button id='testCard' className='displayCards'
+                onClick={()=>{
+                    const testCard = document.getElementById('testCard')
+                    if (testCard.innerText === test.frontContent){
+                        testCard.innerText = test.backContent 
+                    }
+                    else {
+                        testCard.innerText = test.frontContent
+                    }
+                    
+                }}
+               >{test.frontContent}</button>
 
 
             </div>
