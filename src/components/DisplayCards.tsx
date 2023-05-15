@@ -2,11 +2,7 @@ import { useLocation } from "react-router-dom";
 
  function DisplayCards (){
 
-    const test = useLocation().state;
-    console.log(test)
-
-
-
+    const UniqueCard = useLocation().state;
 
     return (
         <>
@@ -17,18 +13,18 @@ import { useLocation } from "react-router-dom";
             <div className='myFlashCards'>
 
             
-               <button id='testCard' className='displayCards'
+               <button id='uniqueCard' className='displayCards'
                 onClick={()=>{
-                    const testCard = document.getElementById('testCard')
-                    if (testCard.innerText === test.frontContent){
-                        testCard.innerText = test.backContent 
+                    const card = document.getElementById('uniqueCard')
+                    if (card.innerText === UniqueCard.frontContent){
+                        card.innerText = UniqueCard.backContent 
                     }
                     else {
-                        testCard.innerText = test.frontContent
+                        card.innerText = UniqueCard.frontContent
                     }
                     
                 }}
-               >{test.frontContent}</button>
+               >{UniqueCard.frontContent}</button>
 
 
             </div>

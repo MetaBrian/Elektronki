@@ -4,12 +4,11 @@ import { Link } from "react-router-dom"
 function FlashCards(){
 
     const fetchedCards = useLocation().state[0][0];
-    console.log(fetchedCards);
 
-    const teststring = [];
+    const folderLinks = [];
     for (let i=0; i < fetchedCards.length; i++){
   
-      teststring.push(<Link to='/displayCards' key={`${fetchedCards[i]._id}`} state={fetchedCards[i]} className='displayCards'>{fetchedCards[i].title}</Link>)}
+      folderLinks.push(<Link to='/displayCards' key={`${fetchedCards[i]._id}`} state={fetchedCards[i]} className='displayCards'>{fetchedCards[i].title}</Link>)}
 
   
     return (
@@ -20,7 +19,7 @@ function FlashCards(){
 
             <div className='myFlashCards'>
 
-                {[...teststring]}
+                {[...folderLinks]}
             
 
 
