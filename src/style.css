@@ -407,5 +407,13 @@
 
 #DeleteButton{
   font-family: 'Permanent Marker', cursive;
-  background-color: #ff0033;
+  background-color: #ee2400;
+}
+
+#EditButton:hover{
+  background-color: lightgreen;
+}
+
+#DeleteButton:hover{
+  background-color: lightgreen;
 }
