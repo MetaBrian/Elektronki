@@ -400,3 +400,12 @@
   color: lightblue;
 }
 
+#EditButton{
+  font-family: 'Permanent Marker', cursive;
+  background-color: lightblue;
+}
+
+#DeleteButton{
+  font-family: 'Permanent Marker', cursive;
+  background-color: #ff0033;
+}
