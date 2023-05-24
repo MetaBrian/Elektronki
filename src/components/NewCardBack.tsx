@@ -27,7 +27,7 @@ function NewCardBack(){
                 createCard(cardFront.state.title, cardFront.state.frontContent, backContent);
         }}>Submit</Link>
            
-            <Link to='/createcardsfront' id='flipButtonBack' onClick={()=>{console.log(cardFront.state)}}> 
+            <Link to='/createcardsfront' id='flipButtonBack' > 
                 <img height='100%' width='100%'src='../src/assets/flip.png' alt='flip icon'/>
            </Link>
         

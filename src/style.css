@@ -402,7 +402,7 @@
 
 #EditButton{
   font-family: 'Permanent Marker', cursive;
-  background-color: lightblue;
+  background-color: lightgreen;
 }
 
 #DeleteButton{
@@ -411,9 +411,16 @@
 }
 
 #EditButton:hover{
-  background-color: lightgreen;
+  background-color: #ee2400;
 }
 
 #DeleteButton:hover{
   background-color: lightgreen;
+}
+
+#noCards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    font-family: 'Permanent Marker', cursive;
 }

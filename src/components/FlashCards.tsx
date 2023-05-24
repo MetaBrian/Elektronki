@@ -10,7 +10,9 @@ function FlashCards(){
   
       folderLinks.push(<Link to='/displayCards' key={`${fetchedCards[i]._id}`} state={fetchedCards[i]} className='displayCards'>{fetchedCards[i].title}</Link>)}
 
-  
+      const content = folderLinks[0] !== undefined  ? [...folderLinks] : <h2 id='noCards'>You have no cards!</h2>
+      
+      
     return (
         <>
         <div className='FlashCards'>
@@ -19,7 +21,10 @@ function FlashCards(){
 
             <div className='myFlashCards'>
 
-                {[...folderLinks]}
+                
+                {content}
+
+            
             
 
 

@@ -43,7 +43,7 @@ import {Link, useLocation} from 'react-router-dom';
 
            <Link to='/createcardsback'
             state={{title:title, frontContent:frontContent}}
-            onClick={()=>console.log(cardBack.state)}
+          
              id='flipButtonFront' >
                 <img height='100%' width='100%' src='../src/assets/flip.png'/>
            </Link>

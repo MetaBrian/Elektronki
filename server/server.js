@@ -42,7 +42,46 @@ catch(err){
 // await res.json();
 })
 
+app.post('/deleteCard', async (req, res, next) => {
+  const _id = await req.body
 
+  try {
+    await console.log(_id)
+    await Card.deleteOne({
+      "_id": _id
+    })
+  }
+  catch (err){
+    return next(err)
+  }
+
+})
+
+app.post('/editCardFront', async (req, res, next) => {
+  const {_id, content }= await req.body
+
+  try {
+    await Card.updateOne({_id: _id}, { $set: {frontContent: content}})
+
+  }
+  catch (err){
+    return next(err)
+  }
+
+})
+
+app.post('/editCardBack', async (req, res, next) => {
+  const {_id, content }= await req.body
+
+  try {
+    await Card.updateOne({_id: _id}, { $set: {backContent: content}})
+
+  }
+  catch (err){
+    return next(err)
+  }
+
+})
 
 
 //Global error handler

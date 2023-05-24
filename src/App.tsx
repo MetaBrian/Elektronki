@@ -8,6 +8,8 @@ import FlashCards from "./components/FlashCards";
 import ContactMe from "./components/Footer";
 import NewCardBack from "./components/NewCardBack";
 import DisplayCards from "./components/DisplayCards";
+import EditCardFront from "./components/EditCardFront";
+import EditCardBack from "./components/EditCardBack";
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
         <Route path='/createcardsback' element={<NewCardBack/>} />
         <Route path='/exammode' element={<ExamMode/>}/>
         <Route path='/displayCards' element={<DisplayCards/>}/>
+        <Route path='/EditCardsFront' element={<EditCardFront/>}/>
+        <Route path='/EditCardsBack' element={<EditCardBack/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>      
 

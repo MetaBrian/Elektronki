@@ -1,4 +1,5 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import deleteCard from "./deleteCard";
 
  function DisplayCards (){
 
@@ -26,14 +27,12 @@ import { useLocation } from "react-router-dom";
                 }}
                >{UniqueCard.frontContent}</button>
 
-               <button id='EditButton' onClick={()=>{
-                //insert mongodb edit request function here
-                console.log('edit button clicked')}
-               }>Edit FlashCard</button>
+               <Link id='EditButton' state={UniqueCard} to='/EditCardsFront'>Edit FlashCard</Link>
+
+
                <button id='DeleteButton' onClick={()=>{
-                //insert mongodb delete function here
-                //may need to refresh the page in order to resolve ui that does not reflect updated status of available flashcards
-                console.log('delete button clicked')}}>Delete FlashCard</button>
+                deleteCard(UniqueCard._id)
+                }}>Delete FlashCard</button>
 
             </div>
 
