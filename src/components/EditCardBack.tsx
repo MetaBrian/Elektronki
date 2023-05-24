@@ -10,7 +10,7 @@ function EditCardBack(){
         <div className='newCards'>
 
 
-        <h2 id='EditCardsTitle' className='PageTitle'>Edit your Card!</h2>
+        <h2 id='EditCardsTitle' className='PageTitle'>Edit your card!</h2>
             
 
             <div id='cardBack'>           

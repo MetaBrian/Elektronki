@@ -389,10 +389,11 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 3000px;
+  height: 50vh;
   width: 80vw;
   color: black;
   font-family: 'Permanent Marker', cursive;
+  font-size: larger;
 }
 
 .displayCards:hover{
@@ -401,17 +402,21 @@
 }
 
 #EditButton{
+  display: flex;
+  justify-content: center;
+  color: black;
   font-family: 'Permanent Marker', cursive;
-  background-color: lightgreen;
+  background-color: lightblue;
 }
 
 #DeleteButton{
   font-family: 'Permanent Marker', cursive;
   background-color: #ee2400;
+  font-size: medium;
 }
 
 #EditButton:hover{
-  background-color: #ee2400;
+  background-color: lightgreen;
 }
 
 #DeleteButton:hover{
