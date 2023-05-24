@@ -99,13 +99,15 @@ Pass your next exam || interview!
 <br/>
 
 ## <p align="center">Upcoming Features</p>
+Quiz me Mode!
 
-Elektronki aims to be available across all platforms & devices
 
 <br/>
 
 ## <p align="center">License </p>
 
+Elektronki aims to be available across all platforms & devices.
+<br/>
 Please feel free to reach out if you have any comments or concerns!
 
 Upon contributing, you agree that your contributions will be licensed under its [MIT License](/LICENSE).
