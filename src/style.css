@@ -24,15 +24,7 @@
   font-size: larger;
 }
 
-.childDiv{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
-  width: 80%;
-  border-style: outset;
-  border-color: gray;
-}
+
 
 .Home{
   display: flex;
@@ -52,11 +44,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 87%;
-  width: 100%;
+  height: 87vh;
+  width: 100vw;
   position: fixed; 
-  left: 0%;
-  top: 7%;
+  left: 0vh;
+  top: 7vw;
   font-size: larger;
 }
 
@@ -378,4 +370,62 @@
 #SubmitButton{
   color: black;
 
+}
+
+
+
+.myFlashCards{
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 50vh;
+  width: 80vw;
+  border-style: outset;
+  border-color: gray;
+}
+
+.displayCards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 50vh;
+  width: 80vw;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  font-size: larger;
+}
+
+.displayCards:hover{
+  background-color: black;
+  color: lightblue;
+}
+
+#EditButton{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  background-color: lightblue;
+}
+
+#DeleteButton{
+  font-family: 'Permanent Marker', cursive;
+  background-color: #ee2400;
+  font-size: medium;
+}
+
+#EditButton:hover{
+  background-color: lightgreen;
+}
+
+#DeleteButton:hover{
+  background-color: lightgreen;
+}
+
+#noCards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    font-family: 'Permanent Marker', cursive;
 }

@@ -80,6 +80,7 @@ Pass your next exam || interview!
 ![React](https://img.shields.io/static/v1?style=for-the-badge&message=React&color=222222&logo=React&logoColor=61DAFB&label=)
 ![React Router](https://img.shields.io/static/v1?style=for-the-badge&message=React+Router&color=CA4245&logo=React+Router&logoColor=FFFFFF&label=)
 ![Vite](https://img.shields.io/static/v1?style=for-the-badge&message=Vite&color=646CFF&logo=Vite&logoColor=FFFFFF&label=)
+![D3](https://img.shields.io/static/v1?style=for-the-badge&message=D3.js&color=222222&logo=D3.js&logoColor=F9A03C&label=)
 
 <br/>
 
@@ -98,13 +99,15 @@ Pass your next exam || interview!
 <br/>
 
 ## <p align="center">Upcoming Features</p>
+Quiz me Mode!
 
-Elektronki aims to be available across all platforms & devices
 
 <br/>
 
 ## <p align="center">License </p>
 
+Elektronki aims to be available across all platforms & devices.
+<br/>
 Please feel free to reach out if you have any comments or concerns!
 
 Upon contributing, you agree that your contributions will be licensed under its [MIT License](/LICENSE).

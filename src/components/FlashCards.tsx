@@ -1,35 +1,34 @@
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom"
+
 function FlashCards(){
-    //get total cards from db
-    const total: number = 99;
 
-    //get folder card total from db
-    const folder1: number = 20;
-    const folder2: number = 79;
+    const fetchedCards = useLocation().state[0][0];
 
-    //get folder name from db
-    const dbFolder: string = 'placeholder';
+    const folderLinks = [];
+    for (let i=0; i < fetchedCards.length; i++){
+  
+      folderLinks.push(<Link to='/displayCards' key={`${fetchedCards[i]._id}`} state={fetchedCards[i]} className='displayCards'>{fetchedCards[i].title}</Link>)}
 
+      const content = folderLinks[0] !== undefined  ? [...folderLinks] : <h2 id='noCards'>You have no cards!</h2>
+      
+      
     return (
         <>
         <div className='FlashCards'>
             
             <h2 className='PageTitle'>Flashcards</h2>
 
-            <div className='childDiv'>
-            <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfolder1')}}>
-                <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
-                <p>Folder 1 ({folder1})</p>
-            </button>
+            <div className='myFlashCards'>
 
-            <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfolder2')}}>
-                <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
-                Folder 2 ({folder2})
-            </button>
+                
+                {content}
 
-            <button className='FlashCardsButtons' onClick={()=>{console.log('clickedfoldertotal')}}>
-                <img height='50%' width='50%' src='../src/assets/black-folder.png' alt="a black folder"/>
-                All Cards ({total})
-            </button>
+            
+            
+
+
+
             </div>
 
         </div>

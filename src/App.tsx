@@ -7,8 +7,9 @@ import ExamMode from "./components/QuizMe";
 import FlashCards from "./components/FlashCards";
 import ContactMe from "./components/Footer";
 import NewCardBack from "./components/NewCardBack";
-import {useState, useEffect} from 'react';
-
+import DisplayCards from "./components/DisplayCards";
+import EditCardFront from "./components/EditCardFront";
+import EditCardBack from "./components/EditCardBack";
 
 function App() {
 
@@ -22,8 +23,11 @@ function App() {
         <Route path='/'element={<Home/>}/>
         <Route path='/flashcards' element={<FlashCards/>}/>
         <Route path='/createcardsfront' element={<CardFront/>}/>
-        <Route path='/createcardsback' element={<NewCardBack/>}/>
+        <Route path='/createcardsback' element={<NewCardBack/>} />
         <Route path='/exammode' element={<ExamMode/>}/>
+        <Route path='/displayCards' element={<DisplayCards/>}/>
+        <Route path='/EditCardsFront' element={<EditCardFront/>}/>
+        <Route path='/EditCardsBack' element={<EditCardBack/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>      
 
