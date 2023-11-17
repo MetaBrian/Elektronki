@@ -16,7 +16,7 @@ function EditCardBack(){
             <div id='cardBack'>           
                 <textarea id='textAreaBack' placeholder={EditCard.backContent} rows={4} cols={100} ></textarea>
 
-                <button onClick={()=>{}}></button>
+            
 
 
                 
