@@ -20,7 +20,7 @@ function App() {
       <br/>
 
       <Routes>
-        <Route path='/'element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/flashcards' element={<FlashCards/>}/>
         <Route path='/createcardsfront' element={<CardFront/>}/>
         <Route path='/createcardsback' element={<NewCardBack/>} />

@@ -17,12 +17,16 @@ function EditCardBack(){
                 <textarea id='textAreaBack' placeholder={EditCard.backContent} rows={4} cols={100} ></textarea>
 
             
+
+
+                
                <button id='EditButton' onClick={()=>{
 
             const textArea = document.getElementById('textAreaBack')
             if (textArea.value){
             editCard(EditCard._id, textArea.value)
-    
+            location.href='/'; 
+            window.alert('Edited your card\'s back content successfully')
             }
             else {
                 window.alert('Please enter text')

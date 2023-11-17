@@ -22,6 +22,8 @@ function EditCardFront(){
 
                 if (textArea.value){
                 editCard(EditCard._id, textArea.value)
+                location.href='/'; 
+                window.alert('Edited your Card\'s front content successfully')
                 }
                 else {
                     window.alert('Please enter text')
