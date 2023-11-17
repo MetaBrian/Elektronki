@@ -87,6 +87,9 @@
 }
 
 .footerButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-style: hidden;
   /* border-radius: 50%;
   border-color: lightblue; */
@@ -130,8 +133,8 @@
 
 .navBarButtons{
   display: flex;
-  justify-content: end;
   align-items: center;
+  justify-content: center;
   height: 7vh;
   width: 9vw;
   color: lightblue;

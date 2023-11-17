@@ -24,7 +24,9 @@ function NewCardBack(){
             </div>
 
             <Link to='/createcardsfront' state={{backContent:backContent, frontContent: check}} id='SubmitButton' className='SubmitButton' onClick={()=>{
-                createCard(cardFront.state.title, cardFront.state.frontContent, backContent);
+                createCard(cardFront.state.title, cardFront.state.frontContent, backContent)
+                ; 
+           ;
         }}>Submit</Link>
            
             <Link to='/createcardsfront' id='flipButtonBack' > 

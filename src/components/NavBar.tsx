@@ -26,7 +26,6 @@ function NavBar() {
                 </Link>
                 <Link to='/flashcards' 
                 state={[allCards]}
-                onClick={()=>console.log()}
                 className="navLinks">
                     <h2>My Flashcards</h2> 
                 </Link>
@@ -42,9 +41,9 @@ function NavBar() {
             </div>
 
             <div className='navBarButtons'>
-               <button className='navButtons' onClick={() => {window.open('https://github.com/MetaBrian/Elektronki','_blank')}}>
-                    <img height= '63%' width='90%'src='../src/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
-                </button>
+               <a className='navButtons' href='https://github.com/MetaBrian/Elektronki' target='_blank'>
+                    <img height= '100%' width='100%'src='../src/assets/GitHub-logo.png' alt='Github logo button leading to the project"s repo'/>
+                </a>
                 {/* <button className='navButtons'>
                     <img id='colorswitch'height='50%' width='100%' src="../src/assets/lightdark.png" alt='light and dark icon'/>
                 </button> */}

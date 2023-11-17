@@ -32,6 +32,8 @@ import deleteCard from "./deleteCard";
 
                <button id='DeleteButton' onClick={()=>{
                 deleteCard(UniqueCard._id)
+                location.href='/'; 
+            window.alert('Your card has been successfully deleted')
                 }}>Delete FlashCard</button>
 
             </div>
